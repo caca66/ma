@@ -3,7 +3,7 @@
   "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/QueenArzoo/VCPlayBot",
+  "repository": "https://github.com/ccc1cic/ma",
   "stack": "container",
   "buildpacks": [
    {
@@ -11,7 +11,7 @@
    }   
   ],        
   "env": {
-    "كود الترامكس": {
+    "SESSION_NAME": {
       "description": "Pyrogram session string",
       "required": true
     },
@@ -31,7 +31,7 @@
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "XkkkU"
+      "value": "AwesomeSupport"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
@@ -50,7 +50,7 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/bbff8a576827f9755b71d.jpg"
+      "value": "https://telegra.ph/file/9b13ea3ce046a1a5c8098.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
