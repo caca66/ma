@@ -47,10 +47,10 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕ اضفني الى مجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
-                        "❓ How to use Me", callback_data="cbhowtouse")
+                        "كيف تستخدمني ؟", callback_data="cbhowtouse")
                 ],[
                     InlineKeyboardButton(
                          "الاوامر", callback_data="cbcmds"
@@ -98,16 +98,16 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
+        f"""<b>👋🏻 **آهلا** {message.from_user.mention()}</b>
 
-**Please press the button below to read the explanation and see the list of available commands !**
+**اضغط الزر اسفل القائمة لرؤية طريقة الاستخدام والاوامر الخاصه بالبوت !**
 
 ⚡ __Powered by {BOT_NAME} A.I""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="❔ HOW TO USE ME", callback_data="cbguide"
+                        text="طريقة الاستخدام", callback_data="cbguide"
                     )
                 ]
             ]
@@ -117,7 +117,7 @@ async def help(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & filters.private & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>- اهلين {message.from_user.mention} من خلال الازرار اسفل القائمة بتقدر تشوف كل الاوامر مع الشوح الخاص فيها ، كل شي سهل يا عزيزي اقراء الاوامر زين وبتفهم كل شي ♥️ !</b>
+        f"""<b>- اهلين {message.from_user.mention} من خلال الازرار اسفل القائمة بتقدر تشوف كل الاوامر مع الشرح الخاص فيها ، كل شي سهل يا عزيزي اقراء الاوامر زين وبتفهم كل شي ♥️ !</b>
 
 
 ⚡ __Powered by 𝗔 𝗟 𝗢 𝗡 𝗘 __""",
@@ -160,8 +160,8 @@ async def ping_pong(client: Client, message: Message):
     m_reply = await message.reply_text("جاري الحساب...")
     delta_ping = time() - start
     await m_reply.edit_text(
-        " `سرعة البوت !`\n"
-        f"⚡️ `{delta_ping * 1000:.3f} ms`"
+        "سرعة البوت !\n"
+        f"⚡️ {delta_ping * 1000:.3f} ms"
     )
 
 
