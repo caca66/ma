@@ -54,7 +54,7 @@ def cb_admin_check(func: Callable) -> Callable:
         if cb.from_user.id in admemes:
             return await func(client, cb)
         else:
-            await cb.answer("You ain't allowed!", show_alert=True)
+            await cb.answer("الاوامر مو لك يا ملقوف !", show_alert=True)
             return
 
     return decorator
@@ -162,13 +162,13 @@ async def playlist(client, message):
 def updated_stats(chat, queue, vol=100):
     if chat.id in callsmusic.active_chats:
         # if chat.id in active_chats:
-        stats = "Settings of **{}**".format(chat.title)
+        stats = "ظهرت في  **{}**".format(chat.title)
         if len(que) > 0:
             stats += "\n\n"
             stats += "مستوى الصوت : {}%\n".format(vol)
-            stats += "Songs in queue : `{}`\n".format(len(que))
-            stats += "Now Playing : **{}**\n".format(queue[0][0])
-            stats += "Requested by : {}".format(queue[0][1].mention)
+            stats += "في الانتظار  : `{}`\n".format(len(que))
+            stats += "قيد التشغيل : **{}**\n".format(queue[0][0])
+            stats += "بواسطة  {}".format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -300,7 +300,7 @@ async def p_cb(b, cb):
                 name = song[0]
                 usr = song[1].mention(style="md")
                 msg += f"\n- {name}"
-                msg += f"\n- Req by {usr}\n"
+                msg += f"\n- من قبل {usr}\n"
         await cb.message.edit(msg)
 
 
@@ -447,7 +447,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("🔄 <b>Processing</b>")
+    lel = await message.reply("🔄 <b>جاري المعالجه</b>")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -502,7 +502,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("🔎 <b>جاري البحث</b>")
+    await lel.edit("<b>جاري التشغيل..</b>")
     if message.reply_to_message:
         if message.reply_to_message.audio:
             pass
@@ -541,12 +541,12 @@ async def play(_, message: Message):
                     InlineKeyboardButton("عرض قائمة الانتظار", callback_data="playlist"),
                     InlineKeyboardButton("اعدادات التقدم ⏯ ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [InlineKeyboardButton(text="اخفاء القائمة", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
+        thumb_name = "https://telegra.ph/file/bbff8a576827f9755b71d.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -929,17 +929,17 @@ async def jiosaavn(client: Client, message_: Message):
                     invitelink = await client.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Add me as admin of yor group first</b>",
+                        "<b>اعطني صلاحيات الاشراف اولا 😡!</b>",
                     )
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "لقد انضممت الى هنا لتشغيل الموسيقى فقط !"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>المساعد موجود بالدردشه بالفعل </b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -955,7 +955,7 @@ async def jiosaavn(client: Client, message_: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually request here @AwesomeSupport with your group link</i>"
+            "<i> المساعد ليس بالمجموعة اطلب من الادمنيه ارسال /play او قم بأضافته بشكل يدوي </i>"
         )
         return
     requested_by = message_.from_user.first_name
