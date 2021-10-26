@@ -11,7 +11,7 @@ from VCPlayBot.modules.play import cb_admin_check
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>-  **اهلا {query.message.from_user.mention}** \n
--  **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) هو بوت تشغيل اغاني او صوتيات بالمحادثه الصوتيه والمرئيه والقنوات !**
+-  ** ان Mira بوت تشغيل اغاني او صوتيات بالمحادثه الصوتيه والمرئيه والقنوات !**
 
 -  **سوف تجد طريقة الاستخدام في خانت » الاوامر اسفل القائمة !**
 
@@ -55,7 +55,7 @@ async def cbhelp(_, query: CallbackQuery):
 
 **في هذه القائمة ، يمكنك فتح العديد من قوائم الأوامر المتاحة ، وفي كل قائمة أوامر يوجد أيضًا شرح موجز لكل أمر**
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC) -__""",
+⚡ __للاستفسار - @C1CIC -__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -120,7 +120,7 @@ async def cbbasic(_, query: CallbackQuery):
 - /admincache - تحديث قائمة الادمنيه
 - /userbotjoin: يدعو الحساب المساعد @{ASSISTANT_NAME} للدردشة الصوتيه
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -178,7 +178,7 @@ async def cbadmin(_, query: CallbackQuery):
 /m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
 /um - to unmute user you're muted in group
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -202,7 +202,7 @@ async def cbsudo(_, query: CallbackQuery):
 /rmd - مسح جميع التنزيلات
 /clean - تحديث الملفات
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -229,7 +229,7 @@ async def cbowner(_, query: CallbackQuery):
 ملاحظه : **هاذي الاوامر تعمل فقط مع الذي وضعهم الاونر - 
 الون مطورين بالبوت فقط لا تعبث بها رجاء 💁🏻‍♂️-
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -247,7 +247,7 @@ async def cbfun(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>/start</b>
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -270,7 +270,7 @@ async def cbguide(_, query: CallbackQuery):
 3.) اضف @{ASSISTANT_NAME} للمجموعة ثم اكتب  /userbotjoin
 4.) تأكد بأن المحادثه الصوتيه شغاله قبل تشغيل الاغنيه 
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -361,7 +361,7 @@ and you can also set a time for the ban and mute penalties for members in your g
 
 ملاحظة : يمكن تنفيذ جميع الأوامر التي يمتلكها هذا البوت بواسطة مالك البوت - الون دون أي استثناءات.
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -391,7 +391,7 @@ async def cbdelcmds(_, query: CallbackQuery):
  2️⃣ to turn off feature:
      » type `/delcmd off`
       
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -412,7 +412,7 @@ async def cbhelps(_, query: CallbackQuery):
 **في هذه القائمة ، يمكنك فتح العديد من قوائم الأوامر المتاحة ، وفي كل قائمة أوامر يوجد أيضًا شرح موجز لكل أمر**
 
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -458,10 +458,10 @@ async def cbguides(_, query: CallbackQuery):
 
 1.) اضفني الى مجموعتك
 2.) اعطني جميع الصلاحيات
-3.) اضف @{ASSISTANT_NAME} للمجموعة ثم اكتب  /userbotjoin
+3.) اضف @KtttG للمجموعة ثم اكتب  /userbotjoin
 4.) تأكد بأن المحادثه الصوتيه شغاله قبل تشغيل الاغنيه 
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
