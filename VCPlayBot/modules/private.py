@@ -172,7 +172,7 @@ async def get_uptime(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        "🤖 حالة البرت:\n"
+        "🤖 حالة البوت:\n"
         f"• **مدة التشغيل:** `{uptime}`\n"
         f"• **بداية التشفيل:** `{START_TIME_ISO}`"
     )
