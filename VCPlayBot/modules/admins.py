@@ -63,7 +63,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ لا يوجد شي لتشغيله!")
+        await message.reply_text("❗ هيه مافي شي شغال!")
     else:
         try:
             queues.clear(chat_id)
@@ -71,7 +71,7 @@ async def stop(_, message: Message):
             pass
 
         await callsmusic.stop(chat_id)
-        await message.reply_text("! توقفت الاغنيه!")
+        await message.reply_text("ابشر قفلت كل الاغاني الشغاله !")
 
 
 @Client.on_message(command("skip") & other_filters)
