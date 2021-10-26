@@ -3,9 +3,9 @@ The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ccc1cic/ma"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-- قناة البوتl :- [Awesome Bot](http://t.me/XkkkU)
+- قناة البوتl :- [MIRA Mucis ♪ ](http://t.me/XkkkU)
 
-- مطور البوت :- [Awesome Support](http://t.me/C1CIC)
+- مطور البوت :- [𝐀 𝐋 𝐎 𝐍 𝐄 ♪ ](http://t.me/C1CIC)
 
 
 ```
