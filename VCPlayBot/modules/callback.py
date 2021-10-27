@@ -11,7 +11,7 @@ from VCPlayBot.modules.play import cb_admin_check
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>-  **اهلا {query.message.from_user.mention}** \n
--  ** ان Mira بوت تشغيل اغاني او صوتيات بالمحادثه الصوتيه والمرئيه والقنوات !**
+-  ** ميرا هو بوت تشغيل اغاني او صوتيات بالمحادثه الصوتيه والمرئيه والقنوات !**
 
 -  **سوف تجد طريقة الاستخدام في خانت » الاوامر اسفل القائمة !**
 
@@ -226,7 +226,7 @@ async def cbowner(_, query: CallbackQuery):
 /unblock (user id - reason) - unblock user you blocked for using your bot
 /blocklist - show you the list of user was blocked for using your bot
 
-ملاحظه : **هاذي الاوامر تعمل فقط مع الذي وضعهم الاونر - 
+ملاحظه : **هاذي الاوامر تعمل فقط مع الذي وضعه - 
 الون مطورين بالبوت فقط لا تعبث بها رجاء 💁🏻‍♂️-
 
 ⚡ __للاستفسار - @C1CIC__""",
@@ -252,7 +252,7 @@ async def cbfun(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🏡 BACK", callback_data="cbhelp"
+                        "العوده", callback_data="cbhelp"
                     )
                 ]
             ]
@@ -267,7 +267,7 @@ async def cbguide(_, query: CallbackQuery):
 
 1.) اضفني الى مجموعتك
 2.) اعطني جميع الصلاحيات
-3.) اضف @{ASSISTANT_NAME} للمجموعة ثم اكتب  /userbotjoin
+3.) اضف @KtttG للمجموعة ثم اكتب  /userbotjoin
 4.) تأكد بأن المحادثه الصوتيه شغاله قبل تشغيل الاغنيه 
 
 ⚡ __للاستفسار - @C1CIC__""",
@@ -359,7 +359,7 @@ and you can also set a time for the ban and mute penalties for members in your g
    » type `/tm username/reply to message/duration` temporarily mute user
    » type `/um username/reply to message` to unmute user
 
-ملاحظة : يمكن تنفيذ جميع الأوامر التي يمتلكها هذا البوت بواسطة مالك البوت - الون دون أي استثناءات.
+ملاحظة : يمكن تنفيذ جميع الأوامر التي يمتلكها هذا البوت بواسطة الون دون أي استثناءات.
 
 ⚡ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
