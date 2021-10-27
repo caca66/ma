@@ -479,7 +479,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "لقد انضممت الى هنا لتشغيل الموسيقى فقط 🎶!"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -779,7 +779,7 @@ async def ytplay(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "لقد انضممت الى هنا لتشغيل الموسيقى 🎶! "
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
