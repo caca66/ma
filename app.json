@@ -26,17 +26,17 @@
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": ""
+      "value": "𝗠𝗜𝗥𝗔"
     },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "AwesomeSupport"
+      "value": "XkkkU"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "VCPlayBot2.0"
+      "value": "MiraBot2.0"
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -50,12 +50,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/9b13ea3ce046a1a5c8098.png"
+      "value": "https://telegra.ph/file/4d535781349aaabdebda9.jpg"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "LaylaList"
+      "value": "XkkkU"
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
