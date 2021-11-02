@@ -21,7 +21,7 @@ async def cbstart(_, query: CallbackQuery):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ اضفني الى مجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "اضفني الى مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                         "كيف تستخدمني ؟", callback_data="cbhowtouse")
@@ -30,16 +30,16 @@ async def cbstart(_, query: CallbackQuery):
                          "الاوامر", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "قناة المطور", url=f"https://t.me/NvvvM")
+                        "قناة المطور", url=f"https://t.me/BHbbb")
                 ],[
                     InlineKeyboardButton(
-                        "قناة التحديثات", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "شات فوزا", url=f"https://t.me/Foza00"
                     ),
                     InlineKeyboardButton(
-                        "قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "", url=f"https://t.me/")
                 ],[
                     InlineKeyboardButton(
-                        "المطور 🎖", url="https://t.me/C1CiC"
+                        "المطور", url="https://t.me/ALLLL"
                     )
                 ]
             ]
@@ -55,7 +55,7 @@ async def cbhelp(_, query: CallbackQuery):
 
 **في هذه القائمة ، يمكنك فتح العديد من قوائم الأوامر المتاحة ، وفي كل قائمة أوامر يوجد أيضًا شرح موجز لكل أمر**
 
-⚡ __للاستفسار - @C1CIC -__""",
+ __للاستفسار - @ALLLL -__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -144,7 +144,7 @@ async def cbadvanced(_, query: CallbackQuery):
 /ping - لعرض سرعة البوت
 /uptime - لعرض حالة البوت
 
-⚡ __للاستفسار - [𝐀 𝐋 𝐎 𝐍 𝐄](t.me/C1CIC)__""",
+ للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -178,7 +178,7 @@ async def cbadmin(_, query: CallbackQuery):
 /m and /tm (mute / temporary mute) - mute permanently or temporarily muted user in group
 /um - to unmute user you're muted in group
 
-⚡ __للاستفسار - @C1CIC__""",
+للاستفسار - @ALLLL""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -202,7 +202,7 @@ async def cbsudo(_, query: CallbackQuery):
 /rmd - مسح جميع التنزيلات
 /clean - تحديث الملفات
 
-⚡ __للاستفسار - @C1CIC__""",
+للاستفسار - @ALLLL""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -218,7 +218,7 @@ async def cbsudo(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbowner"))
 async def cbowner(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>**اوامر الاونر - A L O N E **</b>
+        f"""<b>**اوامر الاونر **</b>
 
 /stats - show the bot statistic
 /broadcast - send a broadcast message from bot
@@ -229,7 +229,7 @@ async def cbowner(_, query: CallbackQuery):
 ملاحظه : **هاذي الاوامر تعمل فقط مع الذي وضعه - 
 الون مطورين بالبوت فقط لا تعبث بها رجاء 💁🏻‍♂️-
 
-⚡ __للاستفسار - @C1CIC__""",
+للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -247,7 +247,7 @@ async def cbfun(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b>/start</b>
 
-⚡ __للاستفسار - @C1CIC__""",
+ للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -267,10 +267,10 @@ async def cbguide(_, query: CallbackQuery):
 
 1.) اضفني الى مجموعتك
 2.) اعطني جميع الصلاحيات
-3.) اضف @KtttG للمجموعة ثم اكتب  /userbotjoin
+3.) اضف @FOZ2l للمجموعة ثم اكتب  /userbotjoin
 4.) تأكد بأن المحادثه الصوتيه شغاله قبل تشغيل الاغنيه 
 
-⚡ __للاستفسار - @C1CIC__""",
+للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -361,7 +361,7 @@ and you can also set a time for the ban and mute penalties for members in your g
 
 ملاحظة : يمكن تنفيذ جميع الأوامر التي يمتلكها هذا البوت بواسطة الون دون أي استثناءات.
 
-⚡ __للاستفسار - @C1CIC__""",
+ __للاستفسار - @C1CIC__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -433,7 +433,7 @@ async def cbhelps(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "اوامر 𝗢𝘄𝗻𝗲𝗿", callback_data="cbowner"
+                        "اوامر الاوانر", callback_data="cbowner"
                     )
                 ],
                 [
@@ -458,10 +458,10 @@ async def cbguides(_, query: CallbackQuery):
 
 1.) اضفني الى مجموعتك
 2.) اعطني جميع الصلاحيات
-3.) اضف @KtttG للمجموعة ثم اكتب  /userbotjoin
+3.) اضف @FOZ2l للمجموعة ثم اكتب  /userbotjoin
 4.) تأكد بأن المحادثه الصوتيه شغاله قبل تشغيل الاغنيه 
 
-⚡ __للاستفسار - @C1CIC__""",
+للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
