@@ -37,7 +37,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>- **اهلين  {message.from_user.first_name}** \n
-- **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) هو بوت تشغيل اغاني او صوتيات بالمحادثات الصوتيه والمرئيه **
+- **فوزا ميوزك | Foza Music \nهو بوت تشغيل اغاني بالمكالمات المرئية والقنوات **
 
 - **سوف تجد طريقة الاستخدام في قسم » الاوامر  !**
 
@@ -47,7 +47,7 @@ async def start_(client: Client, message: Message):
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ اضفني الى مجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        " اضفني الى مجموعتك ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],[
                     InlineKeyboardButton(
                         "كيف تستخدمني ؟", callback_data="cbhowtouse")
@@ -56,16 +56,16 @@ async def start_(client: Client, message: Message):
                          "الاوامر", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "قناة المطور", url=f"https://t.me/NvvvM")
+                        "", url=f"https://t.me/")
                 ],[
                     InlineKeyboardButton(
-                        "قناة التحديثات", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "شات فوزا", url=f"https://t.me/foza00"
                     ),
                     InlineKeyboardButton(
-                        "قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}")
+                        "قناة المطور", url=f"https://t.me/BhBBB")
                 ],[
                     InlineKeyboardButton(
-                        "مطور البوت 🎖", url="https://t.me/C1CIC"
+                        "مطور البوت", url="https://t.me/ALLLL"
                     )
                 ]
             ]
@@ -80,15 +80,15 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f""" **- اهلين عيني\nاضغط /help**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "Foza Family", url=f"https://t.me/FOZA00"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Source ALi", url=f"https://t.me/BHBBB"
                     )
                 ]
             ]
@@ -102,7 +102,7 @@ async def help(client: Client, message: Message):
 
 **اضغط الزر اسفل القائمة لرؤية طريقة الاستخدام والاوامر الخاصه بالبوت !**
 
-⚡ __Powered by {BOT_NAME} A.I""",
+__للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -120,7 +120,7 @@ async def help_(client: Client, message: Message):
         f"""<b>- اهلين {message.from_user.mention} من خلال الازرار اسفل القائمة بتقدر تشوف كل الاوامر مع الشرح الخاص فيها ، كل شي سهل يا عزيزي اقراء الاوامر زين وبتفهم كل شي ♥️ !</b>
 
 
-⚡ __Powered by 𝗔 𝗟 𝗢 𝗡 𝗘 __""",
+ للاستفسار - @ALLLL """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
