@@ -1,5 +1,5 @@
 {
-  "name": "Foza",
+  "name": "VCPlayBot",
   "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
@@ -23,15 +23,15 @@
       "description": "Your bot's username without @",
       "required": true
     },
-    "اسم البوت": {
+    "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": "Foza Music ♫"
+      "value": "𝗠𝗜𝗥𝗔"
     },
-    "شات فوزا": {
+    "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "Foza00"
+      "value": "XkkkU"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
@@ -50,7 +50,7 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "telegra.ph/file/9b83c63f8ee370c2a3143.jpg"
+      "value": "https://telegra.ph/file/4d535781349aaabdebda9.jpg"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
