@@ -1,9 +1,9 @@
 {
-  "name": "VCPlayBot",
+  "name": "Foza",
   "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/ccc1cic/ma",
+  "repository": "https://github.com/caca66/ma",
   "stack": "container",
   "buildpacks": [
    {
@@ -23,15 +23,15 @@
       "description": "Your bot's username without @",
       "required": true
     },
-    "BOT_NAME": {
+    "اسم البوت": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": "𝗠𝗜𝗥𝗔"
+      "value": "Foza Music ♫"
     },
-    "SUPPORT_GROUP": {
+    "شات فوزا": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "XkkkU"
+      "value": "Foza00"
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
@@ -50,7 +50,7 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/4d535781349aaabdebda9.jpg"
+      "value": "telegra.ph/file/9b83c63f8ee370c2a3143.jpg"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
