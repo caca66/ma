@@ -39,7 +39,7 @@ async def cbstart(_, query: CallbackQuery):
                         "قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}")
                 ],[
                     InlineKeyboardButton(
-                        "المطور 🎖", url="https://t.me/C1CiC"
+                        "المطور", url="https://t.me/C1CiC"
                     )
                 ]
             ]
